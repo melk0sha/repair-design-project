@@ -1,5 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
 body {
-  background: #000000;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 83px;
+  background-color: #131313;
+  text-transform: uppercase;
+}
+header h1 {
+  color: #E3B873;
+  font-size: 20px;
+}
+header nav > ul {
+  display: flex;
+}
+header nav > ul a {
+  color: #ffffff;
+}
+header nav > ul li:first-of-type a {
+  color: #E3B873;
+}
+header nav > ul a:hover {
+  text-shadow: 2px 2px 5px #E3B873;
+}
+header nav > ul li {
+  margin-right: 30px;
+}
+header .tel {
+  text-decoration: underline;
+  color: #E3B873;
+}
+header .request-button {
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 161px;
+  height: 37px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background-color: #E3B873;
+}
+
+section.welcome {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 707px;
+}
+section.welcome .welcome-main {
+  display: flex;
+  background-color: #131313;
+}
+section.welcome .welcome-main a.instagram {
+  display: inline;
+  align-self: center;
+  transform: rotate(90deg);
+  color: #E3B873;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+}
+section.welcome .welcome-main a.instagram::after {
+  content: "";
+  height: 1px;
+  width: 20px;
+  background-color: #E3B873;
+}
+section.welcome .welcome-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(assets/images/bg-welcome.png);
+  height: 707px;
+  width: 1358px;
+}
+section.welcome .welcome-info h2 {
+  width: 600px;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-left: 60px;
+}
+section.welcome .welcome-info h2 span {
+  color: #E3B873;
+}
+section.welcome .welcome-info p {
+  width: 500px;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 30px;
+  margin-left: 60px;
+}
+section.welcome .welcome-info .buttons {
+  margin: 41px 0 0 60px;
+}
+section.welcome .welcome-info .buttons .calculate-button {
+  width: 207px;
+  height: 51px;
+  color: #ffffff;
+  border: none;
+  font-size: 13px;
+  outline: none;
+  line-height: 15px;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  text-transform: uppercase;
+  background-color: #E3B873;
+}
+section.welcome .welcome-info .buttons .submit-app-button {
+  width: 207px;
+  height: 51px;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-left: 15px;
+}
+section.welcome .scroll-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -49px;
+  width: 247px;
+  height: 97px;
+  background-color: #131313;
+}
+section.welcome .scroll-down h4 {
+  display: inline;
+  color: #ffffff;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+section.completed-projects {
+  display: flex;
+  flex-direction: column;
+  height: 1074px;
+  background-color: #131313;
+}
+section.completed-projects ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 85px;
+}
+section.completed-projects ul li:first-of-type a {
+  color: #E3B873;
+  opacity: 1;
+  text-decoration: underline;
+}
+section.completed-projects ul li a {
+  margin-right: 50px;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.3;
+}
+section.completed-projects ul li:last-of-type a {
+  margin-right: 233px;
+}
+section.completed-projects .completed-main {
+  display: flex;
+}
+section.completed-projects .completed-main .completed-info {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,193 @@
+$buttonTextColor: #E3B873;
+$bgColorOne: #131313;
+$bgColorTwo: #ffffff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
 body {
-    background: #000000;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 83px;
+    background-color: $bgColorOne;
+    text-transform: uppercase;
+    h1 {
+        color: $buttonTextColor;
+        font-size: 20px;
+    }
+    nav > ul {
+        display: flex;
+        a {
+            color: $bgColorTwo;
+        }
+        li:first-of-type a {
+            color: $buttonTextColor;
+        }
+        a:hover {
+            text-shadow: 2px 2px 5px #E3B873;
+        }
+        li {
+            margin-right: 30px;
+        }
+    }
+    .tel {
+        text-decoration: underline;
+        color: $buttonTextColor;
+    }
+    .request-button {
+        text-transform: uppercase;
+        color: $bgColorTwo;
+        width: 161px;
+        height: 37px;
+        border-radius: 3px;
+        border: none;
+        outline: none;
+        background-color: $buttonTextColor;
+    }
+}
+
+section.welcome {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 707px;
+    .welcome-main {
+        display: flex;
+        background-color: $bgColorOne;
+        a.instagram {
+            display: inline;
+            align-self: center;
+            transform: rotate(90deg);
+            color: $buttonTextColor;
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 16px;
+        }
+        a.instagram::after {
+            content: '';
+            height: 1px;
+            width: 20px;
+            background-color: $buttonTextColor;
+        }
+    }
+    .welcome-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url(assets/images/bg-welcome.png);
+        height: 707px;
+        width: 1358px;
+        h2 {
+            width: 600px;
+            font-size: 40px;
+            line-height: 53px;
+            text-transform: uppercase;
+            color: $bgColorTwo;
+            margin-left: 60px;
+        }
+        h2 span {
+            color: $buttonTextColor;
+        }
+        p {
+            width: 500px;
+            color: $bgColorTwo;
+            font-size: 22px;
+            line-height: 30px;
+            margin-left: 60px;
+        }
+        .buttons {
+            margin: 41px 0 0 60px;
+            .calculate-button {
+                width: 207px;
+                height: 51px;
+                color: $bgColorTwo;
+                border: none;
+                font-size: 13px;
+                outline: none;
+                line-height: 15px;
+                box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+                border-radius: 2px;
+                text-transform: uppercase;
+                background-color: $buttonTextColor;
+            }
+            .submit-app-button {
+                width: 207px;
+                height: 51px;
+                color: $bgColorTwo;
+                background: transparent;
+                border: 1px solid $bgColorTwo;
+                border-radius: 2px;
+                outline: none;
+                font-size: 13px;
+                line-height: 15px;
+                text-transform: uppercase;
+                margin-left: 15px;
+            }
+        }
+    }
+    .scroll-down {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: -49px;
+        width: 247px;
+        height: 97px;
+        background-color: $bgColorOne;
+        h4 {
+            display: inline;
+            color: $bgColorTwo;
+            margin-right: 10px;
+            font-size: 14px;
+            line-height: 19px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+section.completed-projects {
+    display: flex;
+    flex-direction: column;
+    height: 1074px;
+    background-color: $bgColorOne;
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 85px;
+    }
+    ul li:first-of-type a {
+        color: $buttonTextColor;
+        opacity: 1;
+        text-decoration: underline;
+    }
+    ul li a {
+        margin-right: 50px;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: $bgColorTwo;
+        opacity: 0.3;
+    }
+    ul li:last-of-type a {
+        margin-right: 233px;
+    }
+    .completed-main {
+        display: flex;
+        .completed-info {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
 }
