@@ -47,7 +47,8 @@ header .request-button {
   color: #ffffff;
   width: 161px;
   height: 37px;
-  border-radius: 3px;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border-radius: 2px;
   border: none;
   outline: none;
   background-color: #E3B873;
@@ -64,7 +65,8 @@ section.welcome .welcome-main {
   background-color: #131313;
 }
 section.welcome .welcome-main a.instagram {
-  display: inline;
+  display: flex;
+  position: relative;
   align-self: center;
   transform: rotate(90deg);
   color: #E3B873;
@@ -74,8 +76,11 @@ section.welcome .welcome-main a.instagram {
 }
 section.welcome .welcome-main a.instagram::after {
   content: "";
+  position: absolute;
+  top: 45%;
+  right: -80%;
   height: 1px;
-  width: 20px;
+  width: 51px;
   background-color: #E3B873;
 }
 section.welcome .welcome-info {
@@ -156,6 +161,7 @@ section.completed-projects {
   display: flex;
   flex-direction: column;
   height: 1074px;
+  overflow: hidden;
   background-color: #131313;
 }
 section.completed-projects ul {
@@ -181,10 +187,716 @@ section.completed-projects ul li:last-of-type a {
 }
 section.completed-projects .completed-main {
   display: flex;
+  margin-left: 80px;
 }
 section.completed-projects .completed-main .completed-info {
   display: flex;
   flex-direction: column;
+}
+section.completed-projects .completed-main .completed-info h2 {
+  display: flex;
+  position: relative;
+  width: 100px;
+  margin-top: 40px;
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+section.completed-projects .completed-main .completed-info h2::after {
+  content: "";
+  position: absolute;
+  top: 75%;
+  left: 170%;
+  height: 1px;
+  width: 92px;
+  background-color: #E3B873;
+}
+section.completed-projects .completed-main .completed-info p {
+  margin-top: 34px;
+  font-size: 18px;
+  line-height: 29px;
+  color: #ffffff;
+  width: 450px;
+}
+section.completed-projects .completed-main .completed-info table {
+  margin-top: 60px;
+  width: 442px;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 20px;
+}
+section.completed-projects .completed-main .completed-info table th {
+  color: #E3B873;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+section.completed-projects .completed-main .completed-info table td {
+  padding-bottom: 40px;
+  vertical-align: top;
+}
+section.completed-projects .completed-main .completed-info .arrows-circles {
+  margin-top: 81px;
+  display: flex;
+}
+section.completed-projects .completed-main .completed-info .arrows-circles .circle {
+  margin-left: 17px;
+  margin-top: 2px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+section.completed-projects .completed-main .completed-info .arrows-circles .circle:first-of-type {
+  margin-left: 30px;
+}
+section.completed-projects .completed-main .completed-info .arrows-circles .circle:last-of-type {
+  margin-right: 30px;
+}
+section.completed-projects .completed-main .completed-info .arrows-circles .circle:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+section.completed-projects .completed-main .completed-info .arrows-circles img:last-of-type {
+  margin-top: -1px;
+  transform: rotate(180deg);
+}
+section.completed-projects .completed-main .slider {
+  display: flex;
+  margin-top: 45px;
+  margin-left: 60px;
+}
+section.completed-projects .completed-main .slider img {
+  margin-right: 21px;
+  box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.15);
+}
+section.completed-projects .online-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 91px;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+section.completed-projects .online-control img {
+  margin-top: 12px;
+}
+section.completed-projects .online-control h4 {
+  position: relative;
+}
+section.completed-projects .online-control h4::after {
+  content: "";
+  position: absolute;
+  top: 190%;
+  left: 65%;
+  height: 1px;
+  width: 32px;
+  background-color: #E3B873;
+}
+section.completed-projects .online-control h4::before {
+  content: "";
+  position: absolute;
+  top: 190%;
+  left: 18%;
+  height: 1px;
+  width: 32px;
+  background-color: #E3B873;
+}
+
+.repair-video {
+  margin-top: -160px;
+  display: flex;
+  justify-content: center;
+}
+.repair-video iframe {
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+section.request-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 98px;
+}
+section.request-field p {
+  position: relative;
+  font-size: 20px;
+  line-height: 34px;
+  width: 700px;
+  text-align: center;
+}
+section.request-field p::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 47%;
+  height: 1px;
+  width: 55px;
+  background-color: #E3B873;
+}
+section.request-field form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 91px;
+}
+section.request-field form .submit-line {
+  display: flex;
+}
+section.request-field form .submit-line label {
+  display: block;
+  opacity: 0.5;
+  font-size: 15px;
+  line-height: 20px;
+}
+section.request-field form .submit-line input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #3636367c;
+  color: #131313;
+  font-size: 18px;
+  line-height: 24px;
+  margin-right: 50px;
+  padding-bottom: 3px;
+}
+section.request-field form .submit-line input::-webkit-input-placeholder {
+  color: black;
+}
+section.request-field form .submit-line input::-moz-placeholder {
+  color: black;
+}
+section.request-field form .submit-line button.submit-your-info {
+  width: 200px;
+  font-size: 15px;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+  border-radius: 2px;
+}
+section.request-field form .checkbox-line {
+  display: flex;
+  align-items: center;
+  margin-top: 33px;
+  /*** Checkbox start ***/
+  /*** Checkbox end ***/
+}
+section.request-field form .checkbox-line input[type=checkbox]:checked,
+section.request-field form .checkbox-line input[type=checkbox]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+section.request-field form .checkbox-line input[type=checkbox]:checked + label,
+section.request-field form .checkbox-line input[type=checkbox]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+}
+section.request-field form .checkbox-line input[type=checkbox]:checked + label:before,
+section.request-field form .checkbox-line input[type=checkbox]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dddddd;
+  background-color: #E3B873;
+}
+section.request-field form .checkbox-line input[type=checkbox]:checked + label:before,
+section.request-field form .checkbox-line input[type=checkbox]:not(:checked) + label:before {
+  border-radius: 2px;
+}
+section.request-field form .checkbox-line input[type=checkbox]:checked + label:after,
+section.request-field form .checkbox-line input[type=checkbox]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+section.request-field form .checkbox-line input[type=checkbox]:checked + label:after,
+section.request-field form .checkbox-line input[type=checkbox]:not(:checked) + label:after {
+  left: 5px;
+  top: 5px;
+  width: 8px;
+  height: 4px;
+  border-radius: 1px;
+  border-left: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+section.request-field form .checkbox-line input[type=checkbox]:not(:checked) + label:after {
+  opacity: 0;
+}
+section.request-field form .checkbox-line input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+section.request-field form .checkbox-line label {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+section.types-of-repair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 147px;
+}
+section.types-of-repair h2 {
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+section.types-of-repair h2 {
+  position: relative;
+}
+section.types-of-repair img {
+  margin-top: 13px;
+}
+section.types-of-repair h2::before {
+  content: "";
+  position: absolute;
+  top: 190%;
+  left: 15%;
+  height: 1px;
+  width: 32px;
+  background-color: #E3B873;
+}
+section.types-of-repair h2::after {
+  content: "";
+  position: absolute;
+  top: 190%;
+  right: 15%;
+  height: 1px;
+  width: 32px;
+  background-color: #E3B873;
+}
+section.types-of-repair .types-offers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 31px;
+}
+section.types-of-repair .types-offers .first-offer {
+  display: flex;
+  justify-content: center;
+  height: 421px;
+  width: 392px;
+  margin-right: 30px;
+  background-image: url(assets/images/redecorating.png);
+}
+section.types-of-repair .types-offers .first-offer .first {
+  margin-top: 350px;
+  height: 286px;
+  width: 330px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+}
+section.types-of-repair .types-offers .first-offer .first h4 {
+  padding: 25px 0 0 32px;
+  font-size: 18px;
+  line-height: 25px;
+}
+section.types-of-repair .types-offers .first-offer .first ul {
+  padding: 13px 0 0 50px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+}
+section.types-of-repair .types-offers .first-offer .first ul li {
+  list-style: disc;
+}
+section.types-of-repair .types-offers .first-offer .first .cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin-top: 21px;
+  height: 54px;
+  width: 228px;
+  background-color: #E3B873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+section.types-of-repair .types-offers .second-offer {
+  display: flex;
+  justify-content: center;
+  height: 421px;
+  width: 392px;
+  margin-right: 30px;
+  background-image: url(assets/images/overhaul.png);
+}
+section.types-of-repair .types-offers .second-offer .second {
+  margin-top: 350px;
+  height: 286px;
+  width: 330px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+}
+section.types-of-repair .types-offers .second-offer .second h4 {
+  padding: 25px 0 0 32px;
+  font-size: 18px;
+  line-height: 25px;
+}
+section.types-of-repair .types-offers .second-offer .second ul {
+  padding: 13px 0 0 50px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+}
+section.types-of-repair .types-offers .second-offer .second ul li {
+  list-style: disc;
+}
+section.types-of-repair .types-offers .second-offer .second .cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin-top: 21px;
+  height: 54px;
+  width: 228px;
+  background-color: #E3B873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+section.types-of-repair .types-offers .third-offer {
+  display: flex;
+  justify-content: center;
+  height: 421px;
+  width: 392px;
+  background-image: url(assets/images/designer-repair.png);
+}
+section.types-of-repair .types-offers .third-offer .third {
+  margin-top: 350px;
+  height: 286px;
+  width: 330px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+}
+section.types-of-repair .types-offers .third-offer .third h4 {
+  padding: 25px 0 0 32px;
+  font-size: 18px;
+  line-height: 25px;
+}
+section.types-of-repair .types-offers .third-offer .third ul {
+  padding: 13px 0 0 50px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #959595;
+}
+section.types-of-repair .types-offers .third-offer .third ul li {
+  list-style: disc;
+}
+section.types-of-repair .types-offers .third-offer .third .cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin-top: 21px;
+  height: 54px;
+  width: 228px;
+  background-color: #E3B873;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+section.virtues-call {
+  display: flex;
+  margin-top: 360px;
+}
+section.virtues-call .circles {
+  position: relative;
+  width: 833px;
+}
+section.virtues-call .circles .ellipse {
+  width: 636px;
+  height: 636px;
+  border-radius: 50%;
+  margin-left: -120px;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, #fff 0%, #fff 20%, #fff 20%, #E3B873 100%) border-box;
+  border: 3px solid transparent;
+  z-index: 2;
+}
+section.virtues-call .circles img {
+  position: absolute;
+  height: 636px;
+  top: -5%;
+}
+section.virtues-call .circles .circle:nth-of-type(2) {
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10%;
+  left: 47%;
+  height: 41px;
+  width: 41px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  background-color: #E3B873;
+}
+section.virtues-call .circles .circle:nth-of-type(2)::after {
+  content: "Our specialist will arrive for measurements per day contact, or appoint a date convenient for you";
+  position: absolute;
+  left: 140%;
+  color: #131313;
+  font-size: 18px;
+  line-height: 21px;
+  width: 365px;
+}
+section.virtues-call .circles .circle:nth-of-type(3) {
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 27%;
+  left: 56%;
+  height: 41px;
+  width: 41px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  background-color: #E3B873;
+}
+section.virtues-call .circles .circle:nth-of-type(3)::after {
+  content: "Free metering";
+  position: absolute;
+  left: 140%;
+  color: #131313;
+  font-size: 18px;
+  line-height: 21px;
+  width: 365px;
+}
+section.virtues-call .circles .circle:nth-of-type(4) {
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 58%;
+  height: 41px;
+  width: 41px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  background-color: #E3B873;
+  z-index: 1;
+}
+section.virtues-call .circles .circle:nth-of-type(4)::after {
+  content: "Free consultation";
+  position: absolute;
+  left: 140%;
+  color: #131313;
+  font-size: 18px;
+  line-height: 21px;
+  width: 365px;
+}
+section.virtues-call .circles .circle:nth-of-type(5) {
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 73%;
+  left: 52%;
+  height: 41px;
+  width: 41px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  background-color: #E3B873;
+  z-index: 1;
+}
+section.virtues-call .circles .circle:nth-of-type(5)::after {
+  content: "Get a cost estimate and the timing of your future repairs";
+  position: absolute;
+  left: 140%;
+  color: #131313;
+  font-size: 18px;
+  line-height: 21px;
+  width: 220px;
+}
+section.virtues-call .form-save {
+  display: flex;
+  flex-direction: column;
+}
+section.virtues-call .form-save .call-form {
+  color: #ffffff;
+  height: 509px;
+  width: 506px;
+  background-color: #131313;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+  /*** Checkbox start ***/
+  /*** Checkbox end ***/
+}
+section.virtues-call .form-save .call-form h3 {
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  padding-top: 28px;
+}
+section.virtues-call .form-save .call-form form {
+  display: flex;
+  flex-direction: column;
+  padding: 39px 49px 27px 49px;
+}
+section.virtues-call .form-save .call-form button.call-the-measurer {
+  align-self: flex-end;
+  margin-top: 54px;
+  width: 213px;
+  height: 51px;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+}
+section.virtues-call .form-save .call-form input[type=text] {
+  height: 50px;
+  width: 408px;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: -20px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ffffff15;
+  background: none;
+  padding-top: 20px;
+}
+section.virtues-call .form-save .call-form input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+section.virtues-call .form-save .call-form input::-moz-placeholder {
+  color: #ffffff;
+}
+section.virtues-call .form-save .call-form label:not(:first-of-type) {
+  margin-top: 48px;
+}
+section.virtues-call .form-save .call-form label:not(:last-of-type) {
+  font-size: 15px;
+  line-height: 20px;
+  opacity: 0.5;
+}
+section.virtues-call .form-save .call-form label:last-of-type {
+  margin-top: 2px;
+}
+section.virtues-call .form-save .call-form input[type=checkbox]:checked,
+section.virtues-call .form-save .call-form input[type=checkbox]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+section.virtues-call .form-save .call-form input[type=checkbox]:checked + label,
+section.virtues-call .form-save .call-form input[type=checkbox]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+}
+section.virtues-call .form-save .call-form input[type=checkbox]:checked + label:before,
+section.virtues-call .form-save .call-form input[type=checkbox]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #E3B873;
+  background-color: #E3B873;
+}
+section.virtues-call .form-save .call-form input[type=checkbox]:checked + label:before,
+section.virtues-call .form-save .call-form input[type=checkbox]:not(:checked) + label:before {
+  border-radius: 2px;
+}
+section.virtues-call .form-save .call-form input[type=checkbox]:checked + label:after,
+section.virtues-call .form-save .call-form input[type=checkbox]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+section.virtues-call .form-save .call-form input[type=checkbox]:checked + label:after,
+section.virtues-call .form-save .call-form input[type=checkbox]:not(:checked) + label:after {
+  left: 5px;
+  top: 5px;
+  width: 8px;
+  height: 4px;
+  border-radius: 1px;
+  border-left: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+section.virtues-call .form-save .call-form input[type=checkbox]:not(:checked) + label:after {
+  opacity: 0;
+}
+section.virtues-call .form-save .call-form input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+section.virtues-call .form-save .help-save {
+  display: flex;
+  margin-top: 38px;
+}
+section.virtues-call .form-save .help-save p {
+  margin-top: 20px;
+  margin-left: 5px;
+  color: #E3B873;
+  font-size: 20px;
+  line-height: 25px;
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+
+section.realize-fantasies {
+  display: flex;
+  height: 864px;
+  margin-top: 227px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/bg-fantasies.jpg");
+}
+section.realize-fantasies .realize-list {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
