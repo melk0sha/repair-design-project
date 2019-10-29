@@ -12,6 +12,7 @@ $bgColorTwo: #ffffff;
 
 body {
     max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -24,7 +25,8 @@ header {
     text-transform: uppercase;
     h1 {
         color: $buttonTextColor;
-        font-size: 20px;
+        font-size: 14px;
+        line-height: 16px;
     }
     nav > ul {
         display: flex;
@@ -36,16 +38,23 @@ header {
         }
         a:hover {
             text-shadow: 2px 2px 5px #E3B873;
+            cursor: pointer;
         }
         li {
-            margin-right: 30px;
+            margin-right: 45px;
+            font-size: 14px;
+            line-height: 16px;
         }
     }
     .tel {
-        text-decoration: underline;
+        font-size: 14px;
+        line-height: 16px;
         color: $buttonTextColor;
+        border-bottom: 1px solid $buttonTextColor;
     }
     .request-button {
+        font-size: 13px;
+        line-height: 15px;
         text-transform: uppercase;
         color: $bgColorTwo;
         width: 161px;
@@ -55,6 +64,11 @@ header {
         border: none;
         outline: none;
         background-color: $buttonTextColor;
+        &:hover {
+            background-color: rgb(179, 144, 88);
+            box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+            cursor: pointer;
+        }
     }
 }
 
@@ -125,6 +139,11 @@ section.welcome {
                 border-radius: 2px;
                 text-transform: uppercase;
                 background-color: $buttonTextColor;
+                &:hover {
+                    background-color: rgb(179, 144, 88);
+                    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+                    cursor: pointer;
+                }
             }
             .submit-app-button {
                 width: 207px;
@@ -138,6 +157,11 @@ section.welcome {
                 line-height: 15px;
                 text-transform: uppercase;
                 margin-left: 15px;
+                &:hover {
+                    background-color: rgba(179, 144, 88, 0.637);
+                    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -158,6 +182,10 @@ section.welcome {
             line-height: 19px;
             text-transform: uppercase;
         }
+        img:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
     }
 }
 
@@ -172,10 +200,11 @@ section.completed-projects {
         justify-content: flex-end;
         margin-top: 85px;
     }
-    ul li:first-of-type a {
+    ul li a:hover {
         color: $buttonTextColor;
         opacity: 1;
-        text-decoration: underline;
+        border-bottom: 1px solid $buttonTextColor;
+        cursor: pointer;
     }
     ul li a {
         margin-right: 50px;
@@ -261,15 +290,45 @@ section.completed-projects {
             .arrows-circles .circle:hover {
                 opacity: 1;
                 transform: scale(1.1);
+                cursor: pointer;
+            }
+            .left-arrow:hover {
+                margin-left: -5px;
+                margin-right: 5px;
+                cursor: pointer;
+            }
+            .right-arrow:hover {
+                margin-left: 5px;
+                margin-right: -5px;
+                cursor: pointer;
             }
         }
         .slider {
             display: flex;
+            position: relative;
             margin-top: 45px;
             margin-left: 60px;
             img {
                 margin-right: 21px;
                 box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.15);
+            }
+            .slider-arrow {
+                position: absolute;
+                width: 54px;
+                height: 54px;
+                left: 55%;
+                top: 45%;
+                border-radius: 50%;
+                background-color: $buttonTextColor;
+                box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+                img {
+                    padding: 20px 0 0 22px;
+                }
+                &:hover {
+                    background-color: rgb(179, 144, 88);
+                    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -379,6 +438,11 @@ section.request-field {
                 color: $bgColorTwo;
                 box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
                 border-radius: 2px;
+                &:hover {
+                    background-color: rgb(179, 144, 88);
+                    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+                    cursor: pointer;
+                }
             }
         }
         .checkbox-line {
@@ -784,6 +848,11 @@ section.virtues-call {
                 text-transform: uppercase;
                 background-color: $buttonTextColor;
                 box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+                &:hover {
+                    background-color: rgb(179, 144, 88);
+                    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+                    cursor: pointer;
+                }
             }
             input[type="text"] {
                 height: 50px;
@@ -917,6 +986,7 @@ section.realize-fantasies {
             li:hover {
                 border-bottom: 1px solid $buttonTextColor;
                 color: $buttonTextColor;
+                cursor: pointer;
             }
         }
     }
@@ -1166,6 +1236,16 @@ section.steps {
             .arrows-circles {
                 margin-top: 81px;
                 display: flex;
+                .left-arrow:hover {
+                    margin-left: -5px;
+                    margin-right: 5px;
+                    cursor: pointer;
+                }
+                .right-arrow:hover {
+                    margin-left: 5px;
+                    margin-right: -5px;
+                    cursor: pointer;
+                }
             }
             .arrows-circles .circle {
                 margin-left: 17px;
@@ -1185,6 +1265,7 @@ section.steps {
             .arrows-circles .circle:hover {
                 opacity: 1;
                 transform: scale(1.1);
+                cursor: pointer;
             }
         }
         .steps-numbers {
@@ -1218,6 +1299,7 @@ section.steps {
                 }
                 .field:hover {
                     opacity: 1;
+                    cursor: pointer;
                 }
             }
             section.second {
@@ -1418,17 +1500,384 @@ section.our-team {
             }
         }
     }
-    .line {
-        margin-top: 250px;
-        width: 55px;
-        height: 5px;
-        background-color: $buttonTextColor;
-    }
-    p:last-of-type {
-        color: $bgColorOne;
-    }
 }
 
 section.our-clients {
-    margin-top: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    .line {
+        width: 55px;
+        height: 2px;
+        background-color: $buttonTextColor;
+    }
+    p:first-of-type {
+        margin-top: 17px;
+        color: $bgColorOne;
+        font-size: 20px;
+        line-height: 34px;
+        text-align: center;
+    }
+    h2 {
+        margin-top: 95px;
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+        position: relative;
+    }
+    h2::before {
+        content: '';
+        position: absolute;
+        top: 190%;
+        left: 5%;
+        height: 1px;
+        width: 32px;
+        background-color: $buttonTextColor;
+    }
+    h2::after {
+        content: '';
+        position: absolute;
+        top: 190%;
+        right: 5%;
+        height: 1px;
+        width: 32px;
+        background-color: $buttonTextColor;
+    }
+    img {
+        margin-top: 13px;
+    }
+    .recommend {
+        margin-top: 24px;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+    }
+    .clients {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 39px;
+        .client {
+            display: flex;
+            flex-direction: column;
+            width: 376px;
+            height: 428px;
+            margin-right: 54px;
+            box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+            &:last-of-type {
+                margin-right: 0;
+            }
+            .client-info {
+                display: flex;
+                align-items: center;
+                img {
+                    border-radius: 50%;
+                }
+                span {
+                    margin: 8px 0 0 23px;
+                    font-size: 18px;
+                    line-height: 23px;
+                    color: #181818;
+                }
+            }
+            p {
+                text-align: left;
+                font-size: 15px;
+                line-height: 180%;
+                color: #959595;
+            }
+            .m2-days {
+                display: flex;
+                align-items: center;
+                margin-top: 56px;
+                height: 54px;
+                width: 293px;
+                background-color: $buttonTextColor;
+                box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+                img {
+                    margin: 2px 0 0 17px;
+                }
+                .v-line {
+                    margin-left: 14px;
+                    height: 54px;
+                    width: 1px;
+                    background-color: $bgColorTwo;
+                }
+                p {
+                    margin: 0 0 1px 15px;
+                    font-size: 17px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    color: $bgColorTwo;
+                }
+                p:first-of-type {
+                    margin: 0 0 1px 15px;
+                }
+            }
+        }
+    }
+    
+    .questions {
+        width: 883px;
+        height: 445px;
+        background-color: #181818;
+        margin: 131px 0 -225px;
+        h3 {
+            margin-top: 33px;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $bgColorTwo;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .inline {
+                display: flex;
+                margin-top: 46px;
+                .block {
+                    display: flex;
+                    flex-direction: column;
+                    label {
+                        opacity: 0.5;
+                    }
+                    input {
+                        width: 231px;
+                    }
+                &:first-of-type {
+                    margin-right: 57px;
+                }
+                }
+            }
+            .question {
+                margin-top: 47px;
+                width: 517px;
+                input {  
+                    width: 517px;
+                }
+                label {
+                    opacity: 0.5;
+                }
+            }
+            label {
+                display: block;
+                color: $bgColorTwo;
+                font-size: 15px;
+                line-height: 20px;
+            }
+            input {
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #3636367c;
+                color: $bgColorOne;
+                font-size: 18px;
+                line-height: 24px;
+                padding-bottom: 3px;
+            }
+            button.question-btn {
+                margin-top: 48px;
+                width: 213px;
+                height: 51px;
+                color: $bgColorTwo;
+                font-size: 13px;
+                line-height: 18px;
+                outline: none;
+                border: none;
+                text-transform: uppercase;
+                background-color: $buttonTextColor;
+                box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+                &:hover {
+                    background-color: rgb(179, 144, 88);
+                    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+                    cursor: pointer;
+                }
+            }
+            input[type="text"] {
+                height: 50px;
+                font-size: 18px;
+                line-height: 25px;
+                margin-top: -20px;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #ffffff15;
+                background: none;
+                padding-top: 20px;
+            }
+            input::-webkit-input-placeholder {
+                color: $bgColorTwo;
+            } 
+            input::-moz-placeholder {
+                color: $bgColorTwo;
+            }
+            label:not(:first-of-type) {
+                margin-top: 48px;
+            }
+            label:not(:last-of-type) {
+                font-size: 15px;
+                line-height: 20px;
+                opacity: 0.5;
+            }
+            label:last-of-type {
+                margin-top: 2px;
+            }
+            
+            /*** Checkbox start ***/
+            input[type="checkbox"]:checked, 
+            input[type="checkbox"]:not(:checked) {
+                position: absolute;
+                left: -9999px;
+            }
+            input[type="checkbox"]:checked + label, 
+            input[type="checkbox"]:not(:checked) + label {
+                display: inline-block;
+                position: relative;
+                padding-left: 28px;
+                margin-top: 44px;
+                line-height: 20px;
+                cursor: pointer;
+            }
+            input[type="checkbox"]:checked + label:before, 
+            input[type="checkbox"]:not(:checked) + label:before {
+                content: "";
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 18px;
+                height: 18px;
+                border: 1px solid $buttonTextColor;
+                background-color: $buttonTextColor;
+            }
+            input[type="checkbox"]:checked + label:before, 
+            input[type="checkbox"]:not(:checked) + label:before {
+                border-radius: 2px;
+            }
+            input[type="checkbox"]:checked + label:after, 
+            input[type="checkbox"]:not(:checked) + label:after {
+                content: "";
+                position: absolute;
+                -webkit-transition: all 0.2s ease;
+                -moz-transition: all 0.2s ease;
+                -o-transition: all 0.2s ease;
+                transition: all 0.2s ease;
+            }
+            input[type="checkbox"]:checked + label:after, 
+            input[type="checkbox"]:not(:checked) + label:after {
+                left: 5px;
+                top: 5px;
+                width: 8px;
+                height: 4px;
+                border-radius: 1px;
+                border-left: 3px solid $bgColorTwo;
+                border-bottom: 3px solid $bgColorTwo;
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+            input[type="checkbox"]:not(:checked) + label:after {
+                opacity: 0;
+            }
+            input[type="checkbox"]:checked + label:after {
+                opacity: 1;
+            }
+            /*** Checkbox end ***/
+        }
+    }
+}
+
+section.connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 954px;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%), url(/assets/images/bg-connect.jpg);
+    p {
+        margin-top: 277px;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $buttonTextColor;
+        a {
+            color: $buttonTextColor;
+        }
+    }
+    .social-nets {
+        margin-top: 26px;
+        img:first-of-type {
+            margin-right: 15px;
+        }
+        img:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+    .map {
+        margin-top: 43px;
+        width: 925px;
+        height: 465px;
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 133px;
+    background-color: $bgColorOne;
+    text-transform: uppercase;
+    h1 {
+        margin-left: 22px;
+        color: $buttonTextColor;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+    nav > ul {
+        display: flex;
+        a {
+            color: $bgColorTwo;
+        }
+        li:first-of-type a {
+            color: $buttonTextColor;
+        }
+        a:hover {
+            text-shadow: 2px 2px 5px #E3B873;
+            cursor: pointer;
+        }
+        li {
+            margin-right: 40px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    .tel {
+        color: $buttonTextColor;
+        font-size: 14px;
+        line-height: 16px;
+        border-bottom: 1px solid $buttonTextColor;
+    }
+    .request-button {
+        text-transform: uppercase;
+        font-size: 13px;
+        line-height: 15px;
+        color: $bgColorTwo;
+        width: 161px;
+        height: 37px;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+        border-radius: 2px;
+        border: none;
+        outline: none;
+        margin-right: 20px;
+        background-color: $buttonTextColor;
+        &:hover {
+            background-color: rgb(179, 144, 88);
+            box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+            cursor: pointer;
+        }
+    }
 }
