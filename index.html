@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -67,16 +68,19 @@
                         </tr>
                     </table>
                     <div class="arrows-circles">
-                        <img src="assets/images/left-arrow.svg" alt="Left arrow">
+                        <img class="left-arrow" src="assets/images/left-arrow.svg" alt="Left arrow">
                         <div class="circle"></div>
                         <div class="circle"></div>
                         <div class="circle"></div>
-                        <img src="assets/images/right-arrow.svg" alt="Right arrow">
+                        <img class="right-arrow" src="assets/images/right-arrow.svg" alt="Right arrow">
                     </div>
                 </div>
                 <div class="slider">
-                    <img src="assets/images/img-slider.png" alt="Slider image">
-                    <img src="assets/images/img-slider-2.png" alt="Slider image">
+                    <img class="slider-img-1" src="assets/images/img-slider.png" alt="Slider image">
+                    <img class="slider-img-2" src="assets/images/img-slider-2.png" alt="Slider image">
+                    <div class="slider-arrow">
+                        <img src="assets/images/slider-arrow.png" alt="Slider arrow">
+                    </div>
                 </div>
             </div>
             <div class="online-control">
@@ -277,14 +281,14 @@
                     <p>After your call, we go to you to consult and measure the premises of your apartment. During our meeting, you can ask absolutely any number of questions. An appraiser-appraiser leaves to measure the room.</p>
                     <p>He will advise you on the issues of repair technology, apartment design, terms of repair of the apartment as a whole and its individual stages.</p>
                     <div class="arrows-circles">
-                            <img src="assets/images/left-arrow.svg" alt="Left arrow">
+                            <img class="left-arrow" src="assets/images/left-arrow.svg" alt="Left arrow">
                             <div class="circle"></div>
                             <div class="circle"></div>
                             <div class="circle"></div>
                             <div class="circle"></div>
                             <div class="circle"></div>
                             <div class="circle"></div>
-                            <img src="assets/images/right-arrow.svg" alt="Right arrow">
+                            <img class="right-arrow" src="assets/images/right-arrow.svg" alt="Right arrow">
                     </div>
                 </div>
                 <div class="steps-numbers">
@@ -350,69 +354,101 @@
                     </div>
                 </div>
             </div>
-            <div class="line"></div>
-            <p>Each employee of our company is a qualified full-time specialist<br> with work experience of 6 years.<br> We do not have laborers and guest workers, each employee carries out<br> work corresponding to his specialty.</p>
         </section>
         <section class="our-clients">
+            <div class="line"></div>
+            <p>Each employee of our company is a qualified full-time specialist<br> with work experience of 6 years.<br> We do not have laborers and guest workers, each employee carries out<br> work corresponding to his specialty.</p>
             <h2>Our clients</h2>
-            <img src="" alt="">
-            <p>80% of our customers recommend us to their friends and family.</p>
+            <img src="assets/images/our-clients.svg" alt="Our clients">
+            <p class="recommend">80% of our customers recommend us to their<br> friends and family.</p>
             <div class="clients">
-                <div class="first">
-                    <img src="" alt="Maria's photo">
-                    <span>Fedosova Maria Konstantinovna</span>
+                <div class="client">
+                    <div class="client-info">
+                        <img src="assets/images/client-1.jpg" alt="Client's photo">
+                        <span>Fedosova Maria<br> Konstantinovna</span>
+                    </div>
                     <p>I want to thank the guys for their work. We put your shower part in repair. I am very grateful that i referred to the repair as to my own. Gread tranks i express the project to georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated, team mobile and professional, works performed qualitatively without comments, quality satisfied. Prices democratic, i recommend these masters.</p>
-                    <span>40 m2</span>
-                    <span>48 days</span>
+                    <div class="m2-days">
+                            <img src="assets/images/m2.svg" alt="m2">
+                            <p>40 m2</p>
+                            <div class="v-line"></div>
+                            <img src="assets/images/days.svg" alt="days">
+                            <p>48 days</p>
+                    </div>
                 </div>
-                <div class="second">
-                    <img src="" alt="Sergey's photo">
-                    <span>Afanasyev Sergey Alexandrovich</span>
+                <div class="client">
+                    <div class="client-info">
+                        <img src="assets/images/client-2.jpg" alt="Client's photo">
+                        <span>Afanasyev Sergey<br> Alexandrovich</span>
+                    </div>
                     <p>I want to thank the guys for their work. We put your shower part in repair. I am very grateful that i referred to the repair as to my own. Gread tranks i express the project to georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated, team mobile and professional, works performed qualitatively without comments, quality satisfied. Prices democratic, i recommend these masters.</p>
-                    <span>90 m2</span>
-                    <span>128 days</span>
+                    <div class="m2-days">
+                            <img src="assets/images/m2.svg" alt="m2">
+                            <p>90 m2</p>
+                            <div class="v-line"></div>
+                            <img src="assets/images/days.svg" alt="days">
+                            <p>128 days</p>
+                    </div>
                 </div>
-                <div class="third">
-                    <img src="" alt="Egor's photo">
-                    <span>Kiriev Egor Leonidovich</span>
+                <div class="client">
+                    <div class="client-info">
+                        <img src="assets/images/client-3.jpg" alt="Client's photo">
+                        <span>Kiriev Egor<br> Leonidovich</span>
+                    </div>
                     <p>I want to thank the guys for their work. We put your shower part in repair. I am very grateful that i referred to the repair as to my own. Gread tranks i express the project to georgia for its professionalism and approach. The repair process was turned out in terms, faster than anticipated, team mobile and professional, works performed qualitatively without comments, quality satisfied. Prices democratic, i recommend these masters.</p>
-                    <span>56 m2</span>
-                    <span>86 days</span>
+                    <div class="m2-days">
+                        <img src="assets/images/m2.svg" alt="m2">
+                        <p>56 m2</p>
+                        <div class="v-line"></div>
+                        <img src="assets/images/days.svg" alt="days">
+                        <p>86 days</p>
+                    </div>
                 </div>
             </div>
             <div class="questions">
                 <h3>Have any questions?</h3>
                 <form method="POST">
-                    <label for="name">Name<input type="text" id="name" placeholder="What is your name:"></label>
-                    <label for="phone">Phone<input type="text" id="phone" placeholder="Your phone number:"></label>
-                    <label for="question">Email<inpur type="text" id="question" placeholder="I want to know:"></inpur></label>
-                    <input type="checkbox" required>I agree to the processing of personal data
-                    <button class="question-sumbit">Call the measurer</button>
+                    <div class="inline">
+                        <div class="block">
+                                <label for="name-2">Name</label>
+                                <input type="text" id="name-2" placeholder="What is your name:">
+                        </div>
+                        <div class="block">
+                                <label for="phone-2">Phone</label>
+                                <input type="text" id="phone-2" placeholder="Your phone number:">
+                        </div>
+                    </div>
+                    <div class="question">
+                        <label for="question">Question</label>
+                        <input type="text" id="question" placeholder="I want to know:"></input>
+                    </div>
+                    <input type="checkbox" id="personal-data-2" required><label for="personal-data-2">I agree to the processing of personal data</label>
+                    <button class="question-btn">Submit</button>
                 </form>
-            </div>
+            </label>
         </section>
         <section class="connect">
-            <p>Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel <a href="tel">+7 (928) 768 32 29</a></p>
+            <p>Rostov-on-Don, Nansen St., 239 Shopping Center<br> Decorum Tel <a href="tel">+7 (928) 768 32 29</a></p>
             <div class="social-nets">
-                <a href=""><img src="" alt="Email"></a>
-                <a href=""><img src="" alt="Instagram"></a>
+                <a href="#"><img src="assets/images/email.svg" alt="Email"></a>
+                <a href="#"><img src="assets/images/instagram.svg" alt="Instagram"></a>
             </div>
-            <img src="" alt="Map">
+            <img class="map" src="assets/images/map.jpg" alt="Map">
         </section>
     </main>
     <footer>
         <h1 class="logo">IC "Repair Design Project"</h1>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Projects</li>
-                <li>Measurement</li>
-                <li>Team</li>
-                <li>Reviews</li>
-                <li>Contacts</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Measurement</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contacts</a></li>
             </ul>
         </nav>
-        <a href="tel">+7 (928) 768-32-39</a>
+        <a class="tel" href="tel">+7 (928) 768-32-39</a>
         <button class="request-button">Request a call</button>
     </footer>
 </body>
