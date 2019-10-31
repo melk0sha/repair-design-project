@@ -20,6 +20,7 @@ section.welcome {
         a.instagram {
             display: flex;
             position: relative;
+            font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
             align-self: center;
             transform: rotate(90deg);
             color: $buttonTextColor;
@@ -45,6 +46,9 @@ section.welcome {
         height: 707px;
         width: 1358px;
         h2 {
+            font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: normal;
             width: 600px;
             font-size: 40px;
             line-height: 53px;
@@ -56,6 +60,7 @@ section.welcome {
             color: $buttonTextColor;
         }
         p {
+            font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
             width: 500px;
             color: $bgColorTwo;
             font-size: 22px;
@@ -65,6 +70,7 @@ section.welcome {
         .buttons {
             margin: 41px 0 0 60px;
             .calculate-button {
+                font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
                 width: 207px;
                 height: 51px;
                 color: $bgColorTwo;
@@ -83,6 +89,7 @@ section.welcome {
                 }
             }
             .submit-app-button {
+                font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
                 width: 207px;
                 height: 51px;
                 color: $bgColorTwo;
@@ -113,6 +120,9 @@ section.welcome {
         background-color: $bgColorOne;
         h4 {
             display: inline;
+            font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: normal;
             color: $bgColorTwo;
             margin-right: 10px;
             font-size: 14px;
@@ -135,6 +145,9 @@ section.completed-projects {
     ul {
         display: flex;
         justify-content: flex-end;
+        font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: normal;
         margin-top: 85px;
     }
     ul li a:hover {
@@ -163,6 +176,9 @@ section.completed-projects {
             h2 {
                 display: flex;
                 position: relative;
+                font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                font-style: normal;
+                font-weight: normal;
                 width: 100px;
                 margin-top: 40px;
                 font-size: 27px;
@@ -181,6 +197,7 @@ section.completed-projects {
                 background-color: $buttonTextColor;
             }
             p {
+                font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
                 margin-top: 34px;
                 font-size: 18px;
                 line-height: 29px;
@@ -194,6 +211,9 @@ section.completed-projects {
                 font-size: 15px;
                 line-height: 20px;
                 th {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     color: $buttonTextColor;
                     text-transform: uppercase;
                     text-align: left;
@@ -201,6 +221,7 @@ section.completed-projects {
                     line-height: 25px;
                 }
                 td {
+                    font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
                     padding-bottom: 40px;
                     vertical-align: top;
                 }
@@ -283,6 +304,9 @@ section.completed-projects {
         }
         h4 {
             position: relative;
+            font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: normal;
         }
         h4::after {
             content: '';
@@ -320,6 +344,7 @@ section.request-field {
     align-items: center;
     margin-top: 98px;
     p {
+        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
         position: relative;
         font-size: 20px;
         line-height: 34px;
@@ -344,12 +369,14 @@ section.request-field {
             display: flex;
             label {
                 display: block;
+                font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
                 opacity: 0.5;
                 font-size: 15px;
                 line-height: 20px;
             }
             input {
                 border: none;
+                font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
                 outline: none;
                 border-bottom: 1px solid #3636367c;
                 color: $bgColorOne;
@@ -366,6 +393,7 @@ section.request-field {
             }
             button.submit-your-info {
                 width: 200px;
+                font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
                 font-size: 15px;
                 line-height: 26px;
                 text-transform: uppercase;
@@ -385,6 +413,7 @@ section.request-field {
         .checkbox-line {
             display: flex;
             align-items: center;
+            font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
             margin-top: 33px;
             /*** Checkbox start ***/
             input[type="checkbox"]:checked, 
@@ -460,11 +489,12 @@ section.types-of-repair {
     align-items: center;
     margin-top: 147px;
     h2 {
+        font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: normal;
         font-size: 20px;
         line-height: 28px;
         text-transform: uppercase;
-    }
-    h2 {
         position: relative;
     }
     img {
@@ -506,6 +536,9 @@ section.types-of-repair {
                 box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
                 background-color: $bgColorTwo;
                 h4 {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     padding: 25px 0 0 32px;
                     font-size: 18px;
                     line-height: 25px;
@@ -516,6 +549,7 @@ section.types-of-repair {
                     line-height: 25px;
                     color: #959595;
                     li {
+                        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
                         list-style: disc;
                     }
                 }
@@ -523,6 +557,9 @@ section.types-of-repair {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     color: $bgColorTwo;
                     margin-top: 21px;
                     height: 54px;
@@ -549,6 +586,9 @@ section.types-of-repair {
                 box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
                 background-color: $bgColorTwo;
                 h4 {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     padding: 25px 0 0 32px;
                     font-size: 18px;
                     line-height: 25px;
@@ -559,6 +599,7 @@ section.types-of-repair {
                     line-height: 25px;
                     color: #959595;
                     li {
+                        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
                         list-style: disc;
                     }
                 }
@@ -566,6 +607,9 @@ section.types-of-repair {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     color: $bgColorTwo;
                     margin-top: 21px;
                     height: 54px;
@@ -591,6 +635,9 @@ section.types-of-repair {
                 box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
                 background-color: $bgColorTwo;
                 h4 {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     padding: 25px 0 0 32px;
                     font-size: 18px;
                     line-height: 25px;
@@ -601,6 +648,7 @@ section.types-of-repair {
                     line-height: 25px;
                     color: #959595;
                     li {
+                        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
                         list-style: disc;
                     }
                 }
@@ -608,6 +656,9 @@ section.types-of-repair {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     color: $bgColorTwo;
                     margin-top: 21px;
                     height: 54px;
@@ -627,6 +678,7 @@ section.virtues-call {
     display: flex;
     margin-top: 360px;
     .circles {
+        font-family: 'FuturaMediumC', Arial, Helvetica, sans-serif;
         position: relative;
         width: 833px;
         .ellipse {  
@@ -755,13 +807,16 @@ section.virtues-call {
     .form-save {
         display: flex;
         flex-direction: column;
+        margin-left: 50px;
         .call-form { 
+            font-family: 'FuturaMediumC', Arial, Helvetica, sans-serif;
             color: $bgColorTwo;
             height: 509px;
             width: 506px;
             background-color: $bgColorOne;
             box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
             h3 {
+                font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
                 font-size: 20px;
                 line-height: 25px;
                 text-align: center;
@@ -774,6 +829,7 @@ section.virtues-call {
             }
             button.call-the-measurer {
                 align-self: flex-end;
+                font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
                 margin-top: 54px;
                 width: 213px;
                 height: 51px;
@@ -792,6 +848,7 @@ section.virtues-call {
                 }
             }
             input[type="text"] {
+                font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
                 height: 50px;
                 width: 408px;
                 font-size: 18px;
@@ -886,6 +943,7 @@ section.virtues-call {
             display: flex;
             margin-top: 38px;
             p {
+                font-family: 'FuturaMediumC', Arial, Helvetica, sans-serif;
                 margin-top: 20px;
                 margin-left: 5px;
                 color: $buttonTextColor;
@@ -906,6 +964,9 @@ section.realize-fantasies {
         color: $bgColorTwo;
         padding: 137px 0 0 99px;
         h2 {
+            font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: normal;
             font-size: 27px;
             line-height: 37px;
             text-transform: uppercase;
@@ -917,6 +978,7 @@ section.realize-fantasies {
             font-size: 20px;
             line-height: 34px;
             li {
+                font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
                 margin-bottom: 15px;
                 display: table;
             }
@@ -947,6 +1009,9 @@ section.design-project {
     height: 470px;
     margin-top: 150px;
     h2 {
+        font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: normal;
         font-size: 20px;
         line-height: 28px;
         text-transform: uppercase;
@@ -974,6 +1039,7 @@ section.design-project {
         background-color: $buttonTextColor;
     }
     p {
+        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
         margin-top: 24px;
         font-size: 20px;
         line-height: 27px;
@@ -997,6 +1063,9 @@ section.design-project {
                 box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
                 background-color: $bgColorTwo;
                 h4 {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     padding: 25px 0 0 32px;
                     font-size: 18px;
                     line-height: 25px;
@@ -1007,13 +1076,17 @@ section.design-project {
                     line-height: 25px;
                     color: #959595;
                     li {
+                        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
                         list-style: disc;
                     }
                 }
-                .cost {                         // can use mixin there
+                .cost {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     color: $bgColorTwo;
                     margin-top: 21px;
                     height: 54px;
@@ -1040,6 +1113,9 @@ section.design-project {
                 box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
                 background-color: $bgColorTwo;
                 h4 {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     padding: 25px 0 0 32px;
                     font-size: 18px;
                     line-height: 25px;
@@ -1050,13 +1126,17 @@ section.design-project {
                     line-height: 25px;
                     color: #959595;
                     li {
+                        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
                         list-style: disc;
                     }
                 }
-                .cost {                         // can use mixin there
+                .cost {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     color: $bgColorTwo;
                     margin-top: 22px;
                     height: 54px;
@@ -1082,6 +1162,9 @@ section.design-project {
                 box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
                 background-color: $bgColorTwo;
                 h4 {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     padding: 25px 0 0 32px;
                     font-size: 18px;
                     line-height: 25px;
@@ -1092,13 +1175,17 @@ section.design-project {
                     line-height: 25px;
                     color: #959595;
                     li {
+                        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
                         list-style: disc;
                     }
                 }
-                .cost {                         // can use mixin there
+                .cost {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     color: $bgColorTwo;
                     margin-top: 31px;
                     height: 54px;
@@ -1127,6 +1214,7 @@ section.steps {
             display: flex;
             flex-direction: column;
             h4 {
+                font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
                 font-size: 15px;
                 line-height: 21px;
                 text-transform: uppercase;
@@ -1134,6 +1222,9 @@ section.steps {
             h2 {
                 display: flex;
                 position: relative;
+                font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                font-style: normal;
+                font-weight: normal;
                 width: 150px;
                 margin-top: 18px;
                 font-size: 27px;
@@ -1158,6 +1249,9 @@ section.steps {
                 text-transform: uppercase;
             }
             h5 {
+                font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                font-style: normal;
+                font-weight: normal;
                 margin-top: 22px;
                 font-size: 15px;
                 line-height: 23px;
@@ -1165,6 +1259,7 @@ section.steps {
                 color: $buttonTextColor;
             }
             p {
+                font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
                 margin-top: 16px;
                 width: 337px;
                 font-size: 15px;
@@ -1223,6 +1318,9 @@ section.steps {
                 }
                 .number {
                     display: table;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     border-bottom: 1px solid $buttonTextColor;
                     text-transform: uppercase;
                     text-align: left;
@@ -1230,6 +1328,7 @@ section.steps {
                     line-height: 25px;
                 }
                 .text-field {
+                    font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
                     margin-top: 17px;
                     font-size: 15px;
                     line-height: 18px;
@@ -1259,6 +1358,9 @@ section.our-team {
     background-color: $bgColorOne;
     color: $bgColorTwo;
     h2 {
+        font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: normal;
         margin-top: 95px;
         font-size: 20px;
         line-height: 28px;
@@ -1287,6 +1389,7 @@ section.our-team {
         margin-top: 13px;
     }
     p:first-of-type {
+        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
         margin-top: 23px;
         font-size: 20px;
         line-height: 27px;
@@ -1312,11 +1415,15 @@ section.our-team {
                 box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
                 background-color: $bgColorTwo;
                 .person-name {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     font-size: 18px;
                     line-height: 25px;
                     color: $bgColorOne;
                 }
                 .person-status {
+                    font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
                     margin-top: 9px;
                     font-size: 18px;
                     line-height: 26px;
@@ -1326,6 +1433,9 @@ section.our-team {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     color: $bgColorTwo;
                     margin-top: 24px;
                     height: 44px;
@@ -1359,11 +1469,15 @@ section.our-team {
                 box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
                 background-color: $bgColorTwo;
                 .person-name {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     font-size: 18px;
                     line-height: 25px;
                     color: $bgColorOne;
                 }
                 .person-status {
+                    font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
                     margin-top: 9px;
                     font-size: 18px;
                     line-height: 26px;
@@ -1373,6 +1487,9 @@ section.our-team {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     color: $bgColorTwo;
                     margin-top: 24px;
                     height: 44px;
@@ -1405,11 +1522,15 @@ section.our-team {
                 box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
                 background-color: $bgColorTwo;
                 .person-name {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     font-size: 18px;
                     line-height: 25px;
                     color: $bgColorOne;
                 }
                 .person-status {
+                    font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
                     margin-top: 9px;
                     font-size: 18px;
                     line-height: 26px;
@@ -1419,6 +1540,9 @@ section.our-team {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     color: $bgColorTwo;
                     margin-top: 24px;
                     height: 44px;
@@ -1450,6 +1574,7 @@ section.our-clients {
         background-color: $buttonTextColor;
     }
     p:first-of-type {
+        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
         margin-top: 17px;
         color: $bgColorOne;
         font-size: 20px;
@@ -1457,6 +1582,9 @@ section.our-clients {
         text-align: center;
     }
     h2 {
+        font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: normal;
         margin-top: 95px;
         font-size: 20px;
         line-height: 28px;
@@ -1485,6 +1613,7 @@ section.our-clients {
         margin-top: 13px;
     }
     .recommend {
+        font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
         margin-top: 24px;
         font-size: 20px;
         line-height: 27px;
@@ -1511,6 +1640,9 @@ section.our-clients {
                     border-radius: 50%;
                 }
                 span {
+                    font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
                     margin: 8px 0 0 23px;
                     font-size: 18px;
                     line-height: 23px;
@@ -1518,6 +1650,7 @@ section.our-clients {
                 }
             }
             p {
+                font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
                 text-align: left;
                 font-size: 15px;
                 line-height: 180%;
@@ -1526,6 +1659,9 @@ section.our-clients {
             .m2-days {
                 display: flex;
                 align-items: center;
+                font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+                font-style: normal;
+                font-weight: normal;
                 margin-top: 56px;
                 height: 54px;
                 width: 293px;
@@ -1560,6 +1696,9 @@ section.our-clients {
         background-color: #181818;
         margin: 131px 0 -225px;
         h3 {
+            font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: normal;
             margin-top: 33px;
             font-size: 20px;
             line-height: 28px;
@@ -1571,6 +1710,7 @@ section.our-clients {
             display: flex;
             flex-direction: column;
             align-items: center;
+            font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
             .inline {
                 display: flex;
                 margin-top: 46px;
@@ -1605,6 +1745,7 @@ section.our-clients {
                 line-height: 20px;
             }
             input {
+                font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
                 border: none;
                 outline: none;
                 border-bottom: 1px solid #3636367c;
@@ -1614,6 +1755,7 @@ section.our-clients {
                 padding-bottom: 3px;
             }
             button.question-btn {
+                font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
                 margin-top: 48px;
                 width: 213px;
                 height: 51px;
@@ -1732,6 +1874,9 @@ section.connect {
     height: 954px;
     background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%), url(../assets/images/bg-connect.jpg);
     p {
+        font-family: 'Yeseva One', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: normal;
         margin-top: 277px;
         font-size: 20px;
         line-height: 28px;
@@ -1768,6 +1913,7 @@ footer {
     background-color: $bgColorOne;
     text-transform: uppercase;
     h1 {
+        font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
         margin-left: 22px;
         color: $buttonTextColor;
         font-size: 14px;
@@ -1787,18 +1933,21 @@ footer {
             cursor: pointer;
         }
         li {
+            font-family: 'FuturaBookC', Arial, Helvetica, sans-serif;
             margin-right: 40px;
             font-size: 14px;
             line-height: 16px;
         }
     }
     .tel {
+        font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
         color: $buttonTextColor;
         font-size: 14px;
         line-height: 16px;
         border-bottom: 1px solid $buttonTextColor;
     }
     .request-button {
+        font-family: 'FuturaDemiC', Arial, Helvetica, sans-serif;
         text-transform: uppercase;
         font-size: 13px;
         line-height: 15px;
