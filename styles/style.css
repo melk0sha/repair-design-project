@@ -45,6 +45,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  width: 100%;
   height: 83px;
   background-color: #131313;
   text-transform: uppercase;
@@ -101,7 +102,7 @@ header .request-button:hover {
   cursor: pointer;
 }
 
-body {
+.wrapper {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
@@ -207,6 +208,9 @@ section.welcome .welcome-info .buttons .submit-app-button:hover {
   background-color: rgba(179, 144, 88, 0.637);
   box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
   cursor: pointer;
+}
+section.welcome .welcome-info .buttons .mobile-submit-app-button {
+  display: none;
 }
 section.welcome .scroll-down {
   display: flex;
@@ -371,7 +375,10 @@ section.completed-projects .completed-main .slider img {
   margin-right: 21px;
   box-shadow: 0px 50px 30px rgba(0, 0, 0, 0.15);
 }
-section.completed-projects .completed-main .slider .slider-arrow {
+section.completed-projects .completed-main .slider .slider-arrow-left {
+  display: none;
+}
+section.completed-projects .completed-main .slider .slider-arrow-right {
   position: absolute;
   width: 54px;
   height: 54px;
@@ -381,10 +388,10 @@ section.completed-projects .completed-main .slider .slider-arrow {
   background-color: #E3B873;
   box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
 }
-section.completed-projects .completed-main .slider .slider-arrow img {
+section.completed-projects .completed-main .slider .slider-arrow-right img {
   padding: 20px 0 0 22px;
 }
-section.completed-projects .completed-main .slider .slider-arrow:hover {
+section.completed-projects .completed-main .slider .slider-arrow-right:hover {
   background-color: #b39058;
   box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
   cursor: pointer;
@@ -440,7 +447,6 @@ section.request-field {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 98px;
 }
 section.request-field p {
   font-family: "FuturaBookC", Arial, Helvetica, sans-serif;
@@ -1059,6 +1065,9 @@ section.realize-fantasies {
 section.realize-fantasies .realize-list {
   color: #ffffff;
   padding: 137px 0 0 99px;
+}
+section.realize-fantasies .realize-list .slider {
+  display: none;
 }
 section.realize-fantasies .realize-list h2 {
   font-family: "Yeseva One", Arial, Helvetica, sans-serif;
@@ -2057,6 +2066,637 @@ footer .request-button:hover {
   background-color: #b39058;
   box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
   cursor: pointer;
+}
+
+@media screen and (min-width: 375px) and (max-width: 700px) {
+  header {
+    width: 100%;
+    height: 57px;
+  }
+  header h1 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  header nav {
+    display: none;
+  }
+  header a.tel {
+    color: #ffffff;
+    border: none;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  header button {
+    display: none;
+  }
+
+  section.welcome {
+    width: 100%;
+    height: 476px;
+  }
+  section.welcome .welcome-main {
+    display: unset;
+    background-color: unset;
+  }
+  section.welcome .welcome-main a.instagram {
+    display: none;
+  }
+  section.welcome .welcome-main a.instagram::before, section.welcome .welcome-main a.instagram::after {
+    display: none;
+  }
+  section.welcome .welcome-main .welcome-info {
+    width: 100%;
+    height: 476px;
+  }
+  section.welcome .welcome-main .welcome-info h2 {
+    width: 340px;
+    font-size: 23px;
+    line-height: 132.83%;
+    margin-left: 18px;
+  }
+  section.welcome .welcome-main .welcome-info p {
+    width: 310px;
+    font-size: 18px;
+    line-height: 135.84%;
+    margin: 16px 0 0 18px;
+  }
+  section.welcome .welcome-main .welcome-info .buttons {
+    margin: 32px 0 0 18px;
+  }
+  section.welcome .welcome-main .welcome-info .buttons .calculate-button {
+    width: 338px;
+  }
+  section.welcome .welcome-main .welcome-info .buttons .submit-app-button {
+    display: none;
+  }
+  section.welcome .welcome-main .welcome-info .buttons .mobile-submit-app-button {
+    display: unset;
+    margin: 26px 0 0 0;
+    width: 338px;
+    height: 51px;
+    font-family: "FuturaDemiC", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    outline: none;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+  section.welcome .scroll-down {
+    display: none;
+  }
+
+  section.completed-projects {
+    width: 100%;
+    height: 851px;
+    position: relative;
+  }
+  section.completed-projects ul {
+    display: none;
+  }
+  section.completed-projects .completed-main {
+    margin-left: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+  section.completed-projects .completed-main .completed-info {
+    align-items: center;
+  }
+  section.completed-projects .completed-main .completed-info h2 {
+    position: unset;
+    width: 200px;
+    margin-top: 36px;
+    font-size: 22px;
+    line-height: 138.6%;
+    text-align: center;
+    letter-spacing: -0.07em;
+  }
+  section.completed-projects .completed-main .completed-info h2:after {
+    display: none;
+  }
+  section.completed-projects .completed-main .completed-info p {
+    margin-top: 22px;
+    width: 311px;
+    font-size: 14px;
+    line-height: 158.48%;
+    text-align: center;
+  }
+  section.completed-projects .completed-main .completed-info table {
+    margin-top: 314px;
+    width: 340px;
+    font-size: 14px;
+    line-height: 138.6%;
+  }
+  section.completed-projects .completed-main .completed-info .arrows-circles {
+    display: none;
+  }
+  section.completed-projects .completed-main .slider {
+    position: absolute;
+    left: 18px;
+    top: 246px;
+    margin: 0;
+  }
+  section.completed-projects .completed-main .slider .slider-img-1 {
+    display: none;
+  }
+  section.completed-projects .completed-main .slider .slider-img-2 {
+    width: 340px;
+    height: 241px;
+  }
+  section.completed-projects .completed-main .slider img {
+    margin-right: 0;
+  }
+  section.completed-projects .completed-main .slider .slider-arrow-left {
+    position: absolute;
+    display: unset;
+    width: 36px;
+    height: 36px;
+    left: 5%;
+    top: 45%;
+    border-radius: 50%;
+    background-color: #E3B873;
+    box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+  }
+  section.completed-projects .completed-main .slider .slider-arrow-left img {
+    padding: 0 11px 9px 0;
+    transform: rotate(180deg);
+  }
+  section.completed-projects .completed-main .slider .slider-arrow-left:hover {
+    background-color: #b39058;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+    cursor: pointer;
+  }
+  section.completed-projects .completed-main .slider .slider-arrow-right {
+    width: 36px;
+    height: 36px;
+    left: 85%;
+    top: 45%;
+  }
+  section.completed-projects .completed-main .slider .slider-arrow-right img {
+    padding: 10px 0 0 13px;
+  }
+  section.completed-projects .online-control {
+    margin-top: 30px;
+    font-size: 22px;
+    line-height: 138.6%;
+  }
+
+  .repair-video {
+    margin-top: -1px;
+    display: block;
+    height: 207px;
+    width: 100%;
+    background-color: #131313;
+  }
+  .repair-video iframe {
+    margin: 0px 0 0 5%;
+    width: 90%;
+    height: 207px;
+  }
+
+  section.request-field {
+    width: 100%;
+    height: 450px;
+    margin-top: -1px;
+    background-color: #131313;
+  }
+  section.request-field p {
+    margin: 51px 0 0 18px;
+    width: 340px;
+    font-size: 14px;
+    line-height: 138.6%;
+    color: #ffffff;
+  }
+  section.request-field p::before {
+    left: 42%;
+  }
+  section.request-field form {
+    display: flex;
+    position: relative;
+    color: #ffffff;
+    margin: 31px 0 0 0;
+  }
+  section.request-field form .submit-line {
+    display: flex;
+    flex-direction: column;
+  }
+  section.request-field form .submit-line .phone {
+    margin-top: 30px;
+  }
+  section.request-field form .submit-line input {
+    width: 340px;
+    margin: 0;
+    background: transparent;
+    color: #ffffff;
+  }
+  section.request-field form .submit-line input::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+  section.request-field form .submit-line input::-moz-placeholder {
+    color: #ffffff;
+  }
+  section.request-field form .submit-line button.submit-your-info {
+    position: absolute;
+    top: 137%;
+    width: 340px;
+    height: 51px;
+  }
+  section.request-field form .checkbox-line {
+    margin-top: 22px;
+  }
+
+  section.types-of-repair {
+    width: 100%;
+    margin-top: 58px;
+  }
+  section.types-of-repair h2 {
+    font-size: 22px;
+    line-height: 138.6%;
+  }
+  section.types-of-repair .types-offers {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.types-of-repair .types-offers .first-offer {
+    margin: 0 0 177px 0;
+    width: 340px;
+    justify-content: left;
+  }
+  section.types-of-repair .types-offers .first-offer .first {
+    margin-top: 230px;
+    height: 241px;
+    width: 270px;
+  }
+  section.types-of-repair .types-offers .first-offer .first h4 {
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.types-of-repair .types-offers .first-offer .first ul {
+    font-size: 13px;
+    line-height: 169.8%;
+  }
+  section.types-of-repair .types-offers .first-offer .first .cost {
+    margin-top: 18px;
+    height: 40px;
+    width: 190px;
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.types-of-repair .types-offers .second-offer {
+    margin: 0 0 177px 0;
+    width: 340px;
+    justify-content: left;
+  }
+  section.types-of-repair .types-offers .second-offer .second {
+    margin-top: 230px;
+    height: 241px;
+    width: 270px;
+  }
+  section.types-of-repair .types-offers .second-offer .second h4 {
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.types-of-repair .types-offers .second-offer .second ul {
+    font-size: 13px;
+    line-height: 169.8%;
+  }
+  section.types-of-repair .types-offers .second-offer .second .cost {
+    margin-top: 18px;
+    height: 40px;
+    width: 190px;
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.types-of-repair .types-offers .third-offer {
+    margin: 0;
+    width: 340px;
+    justify-content: left;
+  }
+  section.types-of-repair .types-offers .third-offer .third {
+    margin-top: 230px;
+    height: 241px;
+    width: 270px;
+  }
+  section.types-of-repair .types-offers .third-offer .third h4 {
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.types-of-repair .types-offers .third-offer .third ul {
+    font-size: 13px;
+    line-height: 169.8%;
+  }
+  section.types-of-repair .types-offers .third-offer .third .cost {
+    margin-top: 18px;
+    height: 40px;
+    width: 190px;
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+
+  section.virtues-call {
+    display: none;
+  }
+
+  section.realize-fantasies {
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    margin-top: 105px;
+    background: transparent;
+  }
+  section.realize-fantasies .first-images, section.realize-fantasies .second-images {
+    display: none;
+  }
+  section.realize-fantasies .realize-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: relative;
+  }
+  section.realize-fantasies .realize-list h2 {
+    width: 300px;
+    font-size: 22px;
+    line-height: 138.6%;
+    text-align: center;
+  }
+  section.realize-fantasies .realize-list ul {
+    display: none;
+  }
+  section.realize-fantasies .realize-list .slider {
+    display: unset;
+    position: absolute;
+    left: -7%;
+    top: 90px;
+    margin: 0;
+  }
+  section.realize-fantasies .realize-list .slider .slider-img-3 {
+    width: 340px;
+    height: 241px;
+  }
+  section.realize-fantasies .realize-list .slider img {
+    margin-right: 0;
+  }
+  section.realize-fantasies .realize-list .slider .slider-arrow-left {
+    position: absolute;
+    display: unset;
+    width: 36px;
+    height: 36px;
+    left: 5%;
+    top: 45%;
+    border-radius: 50%;
+    background-color: #E3B873;
+    box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+  }
+  section.realize-fantasies .realize-list .slider .slider-arrow-left img {
+    padding: 0 11px 9px 0;
+    transform: rotate(180deg);
+  }
+  section.realize-fantasies .realize-list .slider .slider-arrow-left:hover {
+    background-color: #b39058;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+    cursor: pointer;
+  }
+  section.realize-fantasies .realize-list .slider .slider-arrow-right {
+    position: absolute;
+    display: unset;
+    width: 36px;
+    height: 36px;
+    left: 85%;
+    top: 45%;
+    border-radius: 50%;
+    background-color: #E3B873;
+    box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+  }
+  section.realize-fantasies .realize-list .slider .slider-arrow-right img {
+    padding: 10px 0 0 13px;
+  }
+  section.realize-fantasies .realize-list .slider .slider-arrow-right:hover {
+    background-color: #b39058;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.2);
+    cursor: pointer;
+  }
+
+  section.design-project {
+    background-color: #131313;
+    width: 100%;
+    height: 2000px;
+    margin-top: 10px;
+  }
+  section.design-project h2 {
+    color: #ffffff;
+    margin-top: 170px;
+    font-size: 22px;
+    line-height: 138.6%;
+  }
+  section.design-project p {
+    color: #ffffff;
+    width: 340px;
+    font-size: 15px;
+    line-height: 135.84%;
+  }
+  section.design-project .project-offers {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.design-project .project-offers .mini {
+    margin: 0 0 114px 0;
+    width: 340px;
+    height: 365px;
+    justify-content: left;
+  }
+  section.design-project .project-offers .mini .mini-block {
+    margin-top: 223px;
+    height: 177px;
+    width: 270px;
+  }
+  section.design-project .project-offers .mini .mini-block h4 {
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.design-project .project-offers .mini .mini-block ul {
+    font-size: 13px;
+    line-height: 169.8%;
+  }
+  section.design-project .project-offers .mini .mini-block .cost {
+    margin-top: 18px;
+    height: 40px;
+    width: 190px;
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.design-project .project-offers .standart {
+    margin: 0 0 177px 0;
+    width: 340px;
+    height: 365px;
+    justify-content: left;
+  }
+  section.design-project .project-offers .standart .standart-block {
+    margin-top: 230px;
+    height: 241px;
+    width: 270px;
+  }
+  section.design-project .project-offers .standart .standart-block h4 {
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.design-project .project-offers .standart .standart-block ul {
+    font-size: 13px;
+    line-height: 169.8%;
+  }
+  section.design-project .project-offers .standart .standart-block .cost {
+    margin-top: 18px;
+    height: 40px;
+    width: 190px;
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.design-project .project-offers .full {
+    margin: 0;
+    width: 340px;
+    height: 365px;
+    justify-content: left;
+  }
+  section.design-project .project-offers .full .full-block {
+    margin-top: 230px;
+    height: 347px;
+    width: 270px;
+  }
+  section.design-project .project-offers .full .full-block h4 {
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+  section.design-project .project-offers .full .full-block ul {
+    font-size: 13px;
+    line-height: 169.8%;
+  }
+  section.design-project .project-offers .full .full-block .cost {
+    margin-top: 18px;
+    height: 40px;
+    width: 190px;
+    font-size: 15px;
+    line-height: 138.6%;
+  }
+
+  section.steps {
+    display: none;
+  }
+
+  section.our-team {
+    margin-top: -1px;
+    height: 1800px;
+  }
+  section.our-team h2 {
+    margin-top: 80px;
+    font-size: 22px;
+    line-height: 138.6%;
+  }
+  section.our-team p:first-of-type {
+    font-size: 15px;
+    line-height: 135.84%;
+  }
+  section.our-team .team {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.our-team .team .first, section.our-team .team .second {
+    height: 357px;
+    width: 272px;
+    margin: 0 0 150px 0;
+  }
+  section.our-team .team .third {
+    height: 357px;
+    width: 272px;
+    margin: 0 0 150px 0;
+  }
+
+  section.our-clients {
+    margin-top: -1px;
+    width: 100%;
+  }
+  section.our-clients .clients, section.our-clients .recommend, section.our-clients img, section.our-clients h2, section.our-clients h2::before, section.our-clients p:first-of-type, section.our-clients .line {
+    display: none;
+  }
+  section.our-clients .questions {
+    width: 100%;
+    height: 550px;
+    margin: 0;
+    background-color: #131313;
+  }
+  section.our-clients .questions form {
+    color: #ffffff;
+    margin: 31px 0 0 0;
+  }
+  section.our-clients .questions form .inline {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  section.our-clients .questions form .inline .block .phone {
+    margin-top: 30px;
+  }
+  section.our-clients .questions form .inline .block:first-of-type {
+    margin: 0;
+  }
+  section.our-clients .questions form .inline .block:last-of-type {
+    margin-top: 62px;
+  }
+  section.our-clients .questions form .inline .block input {
+    height: 30px;
+    padding: 0;
+    width: 340px;
+    margin: 0;
+    background: transparent;
+    color: #ffffff;
+  }
+  section.our-clients .questions form .inline .block input::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+  section.our-clients .questions form .inline .block input::-moz-placeholder {
+    color: #ffffff;
+  }
+  section.our-clients .questions form .question {
+    margin-top: 62px;
+    width: 340px;
+  }
+  section.our-clients .questions form button.question-btn {
+    width: 340px;
+    height: 51px;
+  }
+  section.our-clients .questions form input[type=checkbox] {
+    margin-right: 10px;
+  }
+
+  section.connect {
+    height: 510px;
+    position: relative;
+    margin-top: -2px;
+    background: #131313;
+  }
+  section.connect .map {
+    width: 340px;
+    height: 255px;
+    position: absolute;
+  }
+  section.connect p {
+    margin-top: 340px;
+    width: 340px;
+    font-size: 18px;
+    line-height: 138.6%;
+  }
+  section.connect .social-nets img {
+    width: 39px;
+    height: 39px;
+  }
+
+  footer {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  section.completed-projects .completed-main .slider {
+    left: 10%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
